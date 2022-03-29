@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:override="true">
+    <color name="primaryColor">#2a5daa</color>
+    <color name="primaryColorAlpha50">#802a5daa</color>
+    <color name="primaryDarkColor">#0c3776</color>
+    <color name="accentColor">#f27e17</color>
+    <color name="revealColor">#2b4c7c</color>
+    <color name="textPrimaryColorDark">#333333</color>
+    <!-- Error view-->
+    <color name="errorText">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00ffffff</color>
+
+    <!--mrege from cscommon-->
+    <color name="orange">#F9C11E</color>
+
+    <color name="dialog_default">#F5F5F5</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!-- copied from holo_blue_dark -->
+    <!-- If you dont modify this in main app thats bad -->
+    <color name="primary_dark">#2a5daa</color>
+    <color name="main_color">#007cc2</color>
+    <color name="accent_translucent">#800079C2</color>
+    <color name="black_with_alpha_dark">#BB000000</color>
+
+
+    <!--new design-->
+    <!--<color name="general_bg">#E5E5E5</color>-->
+    <color name="black">#000000</color>
+    <color name="black_transparent">#90000000</color>
+    <color name="general_bg">#DEDEDE</color>
+    <color name="light_gray_with_alpha">#E6999999</color>
+    <color name="black_with_alpha">#75333333</color>
+
+    <color name="silver">#70DDDDDD</color>
+
+    <color name="transparent_image_overlay">#75E5E5E5</color>
+
+    <color name="item_background_grey">#99d2d2d2</color>
+    <color name="showcase_background">#CC0B0B0B</color>
+    <color name="general_bg_light">#FFFAFAFA</color>
+    <color name="dark_blue">#004D83</color>
+    <color name="orange_new">#ED6535</color>
+    <color name="orange_bright">#FF8941</color>
+    <color name="grey">#666666</color>
+    <color name="grey_divider">#BBB</color>
+    <color name="dark_black">#333333</color>
+    <color name="light_gray">#999999</color>
+    <color name="dark_gray">#656565</color>
+    <color name="dark_gray_transparent">#75000000</color>
+
+    <color name="button_simple_bg">#F8F8F8</color>
+    <color name="button_simple_border">#CCCCCC</color>
+
+    <color name="lighter_gray">#ffdedede</color>
+    <color name="lighter_medium_gray">#eeeeee</color>
+    <color name="lightest_gray">#F2F2F2</color>
+    <color name="greyf7">#F7F7F7</color>
+    <color name="greyLine_ec">#ececec</color>
+    <color name="super_duper_shauns_pissing_me_off_lightest_gray">#F9F9F9</color>
+    <color name="white_alpha">#AAFFFFFF</color>
+    <color name="special_offer">#ED6535</color>
+    <color name="red">#BB0000</color>
+    <color name="red_light">#ffeec8ca</color>
+    <color name="green">#66CC00</color>
+    <color name="green_bright">#009966</color>
+    <color name="welcome_blue">#1c88c9</color>
+    <color name="popup_text_blue">#036baa</color>
+    <color name="bb_inActiveBottomBarItemColor">#858585</color>
+
+    <color name="button_primary_background">#2a5daa</color>
+    <color name="button_primary_border">#2a5daa</color>
+    <color name="button_primary_text">#FFFFFF</color>
+    <!--secondary-->
+    <color name="button_secondary_background">#f27e17</color>
+    <color name="button_secondary_border">#f27e17</color>
+    <color name="button_secondary_text">#FFFFFF</color>
+    <!--outline primary-->
+    <color name="button_outline_primary_background">#00000000</color>
+    <color name="button_outline_primary_border">#2a5daa</color>
+    <color name="button_outline_primary_text">#2a5daa</color>
+
+    <!--outline secondary-->
+    <color name="button_outline_secondary_background">#00000000</color>
+    <color name="button_outline_secondary_border">#f27e17</color>
+    <color name="button_outline_secondary_text">#f27e17</color>
+
+
+    <color name="attachmentDialogGrey">#F1F1F1</color>
+</resources>

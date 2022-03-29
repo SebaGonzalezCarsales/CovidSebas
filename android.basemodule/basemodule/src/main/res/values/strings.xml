@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">BaseNavigationModule</string>
+
+    <string name="generic_error_message">Hubo un problema de comunicación con los servidores.</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="done">Hecho</string>
+    <string name="gallery">Galería</string>
+    <string name="camera">Cámara</string>
+    <string name="close_session_dialog_title">Atención</string>
+    <string name="close_session_dialog_subtitle">Tu sesión ha expirado, favor vuelve a iniciarla</string>
+    <string name="generic_no_connection_message">Estás desconectado. Comprueba tu conexión.</string>
+    <string name="can_not_open_link">No fue posible abrir el link, reintente</string>
+    <string name="generic_error_title">Lo sentimos</string>
+    <string name="try_again_text">Intenta de nuevo</string>
+    <string name="settings_text">Ajustes</string>
+
+    <string name="questionPhoto">¿Cómo desea agregar la imagen?</string>
+    <string name="refresh">Refrescar</string>
+
+    <string name="feedback_permissions_denied">Some required permissions were denied. You must grant all required permissions to use this function.</string>
+    <string name="feedback_permissions_permanentlty_denied">Some required permissions were permanently denied. Please grant them in the App Settings to use this function.</string>
+
+    <!-- Error View Component -->
+    <string name="default_error_title">Error</string>
+    <string name="default_error_message">Error al conectar al servidor, intente nuevamente por favor</string>
+    <string name="default_error_footer">400/23k23-12332-3kj234-ad23234...</string>
+    <string name="default_btn_error_close">Cerrar</string>
+    <string name="default_btn_error_try_again">Intentar nuevamente</string>
+    <string name="error_syntax_json">Error parseando Json </string>
+    <string name="hostname_deeplink" translatable="false"></string>
+    <string name="attach_files">Archivo</string>
+    <string name="connection_error_message">Error de conexión</string>
+</resources>
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryColor"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp">
+
+        <au.com.carsales.basemodule.widget.circleProgressBar.CircleProgressBar
+            android:id="@+id/donutProgressBar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:max="5"
+            tools:progress="5"
+            tools:progressBarThickness="3dp"
+            tools:progressbarColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewTimer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="3s"
+            android:textSize="14sp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+<!--        <com.github.lzyzsd.circleprogress.DonutProgress-->
+<!--            android:id="@+id/donutProgressBar"-->
+<!--            android:layout_width="35dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            app:donut_finished_color="#33ffffff"-->
+<!--            app:donut_finished_stroke_width="2dp"-->
+<!--            app:donut_suffix_text="s"-->
+<!--            app:donut_text_color="@color/white"-->
+<!--            app:donut_text_size="14sp"-->
+<!--            app:donut_unfinished_color="@color/white"-->
+<!--            app:donut_unfinished_stroke_width="2dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:donut_max="5"-->
+<!--            tools:donut_progress="3"-->
+<!--            tools:donut_text="3" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@+id/buttonAction"
+        android:layout_toEndOf="@+id/constraintLayoutTimer"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/TextAppearance.Design.Snackbar.Message"
+        android:textColor="@color/white"
+        tools:text="Title" />
+
+    <Button
+        android:id="@+id/buttonAction"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/opensans_semibold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tools:text="Undo"
+        tools:visibility="visible" />
+
+</RelativeLayout>

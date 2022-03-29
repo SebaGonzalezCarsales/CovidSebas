@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_agent" translatable="false">app %1$s/%2$s Android/%3$s (Android%4$s)</string>
+    <!--default country, will be override by app side-->
+    <string name="country" translatable="false">mx</string>
+    <!--default accept language, will be override by app side-->
+    <string name="accept_language" translatable="false">es-MX</string>
+    <string name="timezone_const" translatable="false">X-CSN-TIMEZONE</string>
+
+</resources>

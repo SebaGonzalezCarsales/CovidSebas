@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appbar_header_height">140dp</dimen>
+    <dimen name="hmc_fragment_horizontal_margin">16dp</dimen>
+    <dimen name="hmc_fragment_vertical_margin">16dp</dimen>
+    <dimen name="hmc_button_stroke_width">1dp</dimen>
+    <dimen name="hmc_button_height_normal">40dp</dimen>
+    <dimen name="hmc_button_height_ghost">32dp</dimen>
+    <dimen name="hmc_button_width_ghost">90dp</dimen>
+
+    <dimen name="hmc_text_size_xxxxlarge">64sp</dimen>
+    <dimen name="hmc_text_size_xxxlarge">48sp</dimen>
+    <dimen name="hmc_text_size_xxlarge">34sp</dimen>
+    <dimen name="hmc_text_size_xlarge">24sp</dimen>
+    <dimen name="hmc_text_size_large">20sp</dimen>
+    <dimen name="hmc_text_size_normal">16sp</dimen>
+    <dimen name="hmc_text_size_small">14sp</dimen>
+    <dimen name="hmc_text_size_xsmall">12sp</dimen>
+    <dimen name="hmc_text_size_min">10sp</dimen>
+    <dimen name="hmc_text_size_xmin">8sp</dimen>
+
+
+    <dimen name="hmc_margin_xsmall">2dp</dimen>
+    <dimen name="hmc_margin_small">4dp</dimen>
+    <dimen name="hmc_margin_medium">8dp</dimen>
+    <dimen name="hmc_margin_large">12dp</dimen>
+    <dimen name="hmc_margin_xlarge">16dp</dimen>
+    <dimen name="hmc_margin_xxlarge">20dp</dimen>
+    <dimen name="hmc_margin_xxxlarge">26dp</dimen>
+    <dimen name="hmc_margin_xxxxlarge">32dp</dimen>
+    <dimen name="bottom_sheet_width">600dp</dimen>
+    <dimen name="attachment_icon_width">58dp</dimen>
+</resources>

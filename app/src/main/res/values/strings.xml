@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestCarsales</string>
+    <string name="statistics_text_confirmed">Casos confirmados:</string>
+    <string name="statistics_text_deaths">Cantidad de personas fallecidas:</string>
+    <string name="statistics_text_not_found">No se encontraron datos</string>
+    <string name="statistics_text_success">Datos cargados</string>
+</resources>

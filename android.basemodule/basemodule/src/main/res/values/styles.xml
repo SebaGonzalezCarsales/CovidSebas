@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:font" tools:targetApi="o">@font/opensans_semibold</item>
+    </style>
+
+    <!--TextDataView Input Dark-->
+    <style name="EditText.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/primaryColor</item>
+        <item name="colorControlActivated">@color/primaryColor</item>
+        <item name="colorControlHighlight">@color/primaryColor</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:font" tools:targetApi="o">@font/opensans_semibold</item>
+    </style>
+
+    <!-- Error Dialog Buttons -->
+    <style name="ErrorDialogButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:background">@drawable/shape_button_login_blue</item>
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:foreground">@drawable/ripple_button_login_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="error"
+            type="au.com.carsales.basemodule.viewcomponent.errorView.APIErrorViewData" />
+
+        <variable
+            name="clickHandler"
+            type="au.com.carsales.basemodule.viewcomponent.errorView.GlobalErrorClickHandler" />
+
+        <variable
+            name="background"
+            type="int" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        bind:errorBg="@{background}">
+
+        <TextView
+            android:id="@+id/errorViewTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="false"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:text="@{error.errorTitle}"
+            android:textColor="@color/textPrimaryColorDark"
+            android:textSize="20sp"
+            tools:text="@string/default_error_title" />
+
+        <TextView
+            android:id="@+id/errorViewMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="false"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:text="@{error.errorMessage}"
+            android:textColor="@color/errorText"
+            android:textSize="14sp"
+            tools:text="@string/default_error_message" />
+
+        <Button
+            android:id="@+id/errorViewSettingsButton"
+            style="@style/ErrorDialogButton"
+            android:onClick="@{(v) -> clickHandler.onSettingsClick(v, error)}"
+            android:text="@string/settings_text"
+            android:visibility="@{error.showSetting ? View.VISIBLE : View.GONE}" />
+
+        <Button
+            android:id="@+id/errorViewTryAgainButton"
+            style="@style/ErrorDialogButton"
+            android:onClick="@{(v) -> clickHandler.onTryAgainClick(v, error)}"
+            android:text="@string/default_btn_error_try_again"
+            android:visibility="@{error.showTryAgain ? View.VISIBLE : View.GONE}" />
+
+        <Button
+            android:id="@+id/errorViewCloseButton"
+            style="@style/ErrorDialogButton"
+            android:onClick="@{(v) -> clickHandler.onCloseClick(v, error)}"
+            android:text="@string/default_btn_error_close"
+            android:visibility="@{error.showClose ? View.VISIBLE : View.GONE}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@{error.footerString }"
+            android:textSize="12sp"
+            android:textColor="@color/grey_divider"
+            android:visibility="@{error.footerString == null ? View.GONE : View.VISIBLE}"
+            tools:text="@string/default_error_footer" />
+
+    </LinearLayout>
+
+</layout>

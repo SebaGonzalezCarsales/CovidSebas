@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android.basemodule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/covidmainmodule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/covidmodule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/routertest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/userModule" vcs="Git" />
+  </component>
+</project>

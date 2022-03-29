@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feedback_permissions_denied">Alguno de los permisos requeridos fueron denegados. Debes conceder todos los permisos requeridos para poder utilizar esta función.</string>
+    <string name="feedback_permissions_permanentlty_denied">Alguno de los permisos requeridos fueron denegados permanentemente. Por favor concédalos manualmente en la configuración de la aplicación para poder utilizar esta función.</string>
+    <string name="action_undo">Deshacer</string>
+</resources>

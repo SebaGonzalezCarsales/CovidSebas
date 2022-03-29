@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="apiData"
+            type="au.com.carsales.basemodule.viewcomponent.errorView.APIErrorViewData" />
+
+        <variable
+            name="clickHandler"
+            type="au.com.carsales.basemodule.viewcomponent.errorView.GlobalErrorClickHandler" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/lighter_medium_gray"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <au.com.carsales.basemodule.viewcomponent.errorView.APIErrorViewComponent
+            android:id="@+id/errorGlobalViewComponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            bind:data="@{apiData}"
+            bind:errorClickHandler="@{clickHandler}" />
+
+    </RelativeLayout>
+</layout>

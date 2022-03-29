@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    tools:background="@color/primaryColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <au.com.carsales.basemodule.widget.circleProgressBar.CircleProgressBar
+            android:id="@+id/circleProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTimer"
+            app:layout_constraintEnd_toEndOf="@+id/textViewTimer"
+            app:layout_constraintStart_toStartOf="@+id/textViewTimer"
+            app:layout_constraintTop_toTopOf="@+id/textViewTimer"
+            app:progressBarThickness="2dp"
+            app:progressbarColor="@color/white"
+            tools:max="5"
+            tools:progress="0" />
+
+        <TextView
+            android:id="@+id/textViewTimer"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:fontFamily="@font/opensans_semibold"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="9s" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/buttonAction"
+        android:layout_toEndOf="@+id/constraintLayoutTimer"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textAppearance="@style/TextAppearance.Design.Snackbar.Message"
+        android:textColor="@color/white"
+        tools:text="Title" />
+
+    <Button
+        android:id="@+id/buttonAction"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/opensans_semibold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tools:text="undo"
+        tools:visibility="visible" />
+
+</RelativeLayout>

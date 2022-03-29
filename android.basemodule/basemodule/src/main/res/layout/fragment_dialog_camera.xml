@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/headerConstraint"
+        layout="@layout/content_dialog_title" />
+
+    <LinearLayout
+        android:id="@+id/containerCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerConstraint"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/galleryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:focusable="false"
+            android:fontFamily="@font/opensans_bold"
+            android:foreground="@drawable/ripple_button_login_blue"
+            android:padding="10dp"
+            android:text="@string/gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:focusable="false"
+            android:fontFamily="@font/opensans_bold"
+            android:foreground="@drawable/ripple_button_login_blue"
+            android:padding="10dp"
+            android:text="@string/camera"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/footerConstraint"
+        layout="@layout/content_dialog_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerCamera" />
+
+</RelativeLayout>

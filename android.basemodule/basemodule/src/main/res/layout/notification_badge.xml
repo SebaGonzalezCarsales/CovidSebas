@@ -1,0 +1,19 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+            android:id="@+id/notificationsBadge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle_count_message_not"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            tools:text="9+"/>
+</merge>

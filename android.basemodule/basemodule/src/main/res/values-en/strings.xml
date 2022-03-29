@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accept">Accept</string>
+    <string name="camera">Camera</string>
+    <string name="can_not_open_link">Link couldn\'t be opened, try again please</string>
+    <string name="cancel">Cancel</string>
+    <string name="close_session_dialog_subtitle">Your session has expired. Log in again please</string>
+    <string name="close_session_dialog_title">Attention</string>
+    <string name="default_btn_error_close">Close</string>
+    <string name="default_btn_error_try_again">Try again</string>
+    <string name="default_error_message">Error connecting with server, try again please</string>
+    <string name="default_error_title">Error</string>
+    <string name="done">Done</string>
+    <string name="gallery">Gallery</string>
+    <string name="generic_error_message">Error connecting with servers</string>
+    <string name="generic_error_title">We are sorry</string>
+    <string name="generic_no_connection_message">You\'re offline. Check your network connection</string>
+    <string name="questionPhoto">How do you wish to add the image?</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings_text">Settings</string>
+    <string name="try_again_text">Try again</string>
+    <string name="error_syntax_json">Error parse json </string>
+    <string name="attach_files">Document</string>
+    <string name="action_undo">Undo</string>
+</resources>

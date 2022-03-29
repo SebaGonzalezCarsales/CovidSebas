@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorPrimaryDark">
+    <!--make sure the ripple doesn't exceed the bounds-->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" />
+            <corners android:radius="50dp" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="?android:attr/colorPrimary" />
+                    <corners android:radius="50dp" />
+                    <stroke
+                        android:color="@android:color/transparent"
+                        android:width="2dp" />
+                    <padding
+                        android:bottom="4dp"
+                        android:left="16dp"
+                        android:right="16dp"
+                        android:top="4dp" />
+                </shape>
+            </item>
+
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/darker_gray" />
+                    <corners android:radius="50dp" />
+                    <stroke
+                        android:color="@android:color/transparent"
+                        android:width="2dp" />
+                    <padding
+                        android:bottom="4dp"
+                        android:left="16dp"
+                        android:right="16dp"
+                        android:top="4dp" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

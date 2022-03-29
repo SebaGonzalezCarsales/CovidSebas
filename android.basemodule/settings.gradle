@@ -1,0 +1,3 @@
+include ':basemodule'
+//, ':apibaselib'
+//project(':apibaselib').projectDir = new File('apibase/apibaselib')

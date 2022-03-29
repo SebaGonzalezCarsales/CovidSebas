@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="csn_cardView">
+        <!-- Corner radius for CardView. -->
+        <attr format="boolean" name="csn_roundCardLeftTopCorner"/>
+        <!-- Corner radius for CardView. -->
+        <attr format="boolean" name="csn_roundCardRightTopCorner"/>
+        <!-- Corner radius for CardView. -->
+        <attr format="boolean" name="csn_roundCardLeftBottomCorner"/>
+        <!-- Corner radius for CardView. -->
+        <attr format="boolean" name="csn_roundCardRightBottomCorner"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DotProgressBar">
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="duration" format="integer" />
+        <attr name="amount" format="integer" />
+        <attr name="animationDirection" format="enum">
+            <enum name="right" value="1" />
+            <enum name="left" value="-1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+    </declare-styleable>
+
+</resources>

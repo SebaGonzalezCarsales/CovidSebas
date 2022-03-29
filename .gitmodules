@@ -1,0 +1,14 @@
+[submodule "android.basemodule"]
+	path = android.basemodule
+	url = git@github.com:carsales-PRIVATE/android.basemodule.git
+	branch = develop-controlPanel
+[submodule "covidmodule"]
+	path = covidmodule
+	url = git@github.com:aapavez/covidmodule.git
+[submodule "routertest"]
+	path = routertest
+	url = git@github.com:aapavez/routertest.git
+[submodule "covidmainmodule"]
+	path = covidmainmodule
+	url = git@github.com:SebaGonzalezCarsales/covidmainmodule.git
+	branch = main
