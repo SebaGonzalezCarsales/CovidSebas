@@ -5,14 +5,14 @@ import au.com.carsales.basemodule.BaseModuleApplication
 import au.com.carsales.basemodule.BaseModuleFragment
 import au.com.carsales.basemodule.router.BaseModuleLifeCycleManager
 import com.example.routertest.RouterApplication.Companion.applicationComponent
-import com.example.routertest.dependency.component.DaggerRouterControlPanelServiceApplicationComponent
-import com.example.routertest.dependency.component.RouterControlPanelServiceApplicationComponent
+import com.example.routertest.dependency.component.DaggerRouterComponent
+import com.example.routertest.dependency.component.RouterComponent
 import com.example.routertest.dependency.module.RouterControlPanelServiceApplicationModule
 
 class RouterApplication : BaseModuleApplication() {
 
     companion object {
-        internal var applicationComponent: RouterControlPanelServiceApplicationComponent? = null
+        internal var applicationComponent: RouterComponent? = null
     }
 
     override fun initLifeCycleManager(): BaseModuleLifeCycleManager {
@@ -27,18 +27,18 @@ class RouterApplication : BaseModuleApplication() {
 }
 
 
-internal fun Context.appComponent(): RouterControlPanelServiceApplicationComponent {
+internal fun Context.appComponent(): RouterComponent {
     return buildDagger(this)
 }
 
-internal fun BaseModuleFragment.appComponent(): RouterControlPanelServiceApplicationComponent {
-    return buildDagger(this.context!!.applicationContext as BaseModuleApplication)
+internal fun BaseModuleFragment.appComponent(): RouterComponent {
+    return buildDagger(this.requireContext().applicationContext as BaseModuleApplication)
 }
 
-private fun buildDagger(context: Context): RouterControlPanelServiceApplicationComponent {
+private fun buildDagger(context: Context): RouterComponent {
 
     if (applicationComponent == null) {
-        applicationComponent =  DaggerRouterControlPanelServiceApplicationComponent
+        applicationComponent =  DaggerRouterComponent
             .builder()
             .routerControlPanelServiceApplicationModule(RouterControlPanelServiceApplicationModule(context as BaseModuleApplication))
             .build()

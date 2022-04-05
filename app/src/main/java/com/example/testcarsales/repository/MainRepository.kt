@@ -1,6 +1,6 @@
 package com.example.testcarsales.repository
 
-import au.com.carsales.basemodule.api.data.Result
+/*import au.com.carsales.basemodule.api.data.Result
 import au.com.carsales.basemodule.context
 import au.com.carsales.basemodule.getAppContext
 import au.com.carsales.basemodule.util.commonResources.State
@@ -24,4 +24,4 @@ class MainRepository @Inject constructor() {
             }
         }.flowOn(Dispatchers.IO)
     }
-}
+}*/

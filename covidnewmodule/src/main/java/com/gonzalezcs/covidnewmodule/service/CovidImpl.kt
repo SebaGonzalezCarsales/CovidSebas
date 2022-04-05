@@ -1,9 +1,11 @@
 package com.gonzalezcs.covidnewmodule.service
 
-import com.gonzalezcs.covidnewmodule.Utils
+import com.gonzalezcs.covidnewmodule.ui.view.CovidDateActivity
 
 class CovidImpl:ICovidNewModuleService {
-    override fun getUserToast(): Utils {
-        return Utils()
+
+    override fun getActivity(): CovidDateActivity {
+        return CovidDateActivity()
     }
+
 }

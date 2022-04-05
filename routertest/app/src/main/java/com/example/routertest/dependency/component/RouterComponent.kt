@@ -7,4 +7,4 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [RouterControlPanelServiceApplicationModule::class])
-interface RouterControlPanelServiceApplicationComponent : BaseApplicationComponent
+interface RouterComponent : BaseApplicationComponent

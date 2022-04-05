@@ -31,13 +31,23 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    kapt {
+        generateStubs = true
+
+        javacOptions {
+            // Increase the max count of errors from annotation processors.
+            // Default is 100.
+            option("-Xmaxerrs", 500)
+        }
+    }
 }
 
 dependencies {
 
     //implementation project(path: ':covidmodule')
-    api project(':covidmodule')
+    //api project(':covidmodule')
     api project(':covidnewmodule')
+    implementation project(path: ':basemodule')
 
 
     def multidexVersion = '2.0.1'
@@ -51,6 +61,7 @@ dependencies {
     def dagger2_version = "2.33"
     implementation "com.google.dagger:dagger:$dagger2_version"
     kapt "com.google.dagger:dagger-compiler:$dagger2_version"
+    kapt "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.3.0"
 
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -58,7 +69,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation project(path: ':basemodule')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

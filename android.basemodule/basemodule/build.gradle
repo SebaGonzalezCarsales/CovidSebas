@@ -4,10 +4,10 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion getRootProjectExtraProperty("androidCompileSdkVersion", 29)
+    compileSdkVersion getRootProjectExtraProperty("androidCompileSdkVersion", 31)
     defaultConfig {
         minSdkVersion getRootProjectExtraProperty("androidMinSdkVersion", 21)
-        targetSdkVersion getRootProjectExtraProperty("androidTargetSdkVersion", 29)
+        targetSdkVersion getRootProjectExtraProperty("androidTargetSdkVersion", 31)
         versionCode 3
         versionName "3.2.11"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

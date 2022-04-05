@@ -1,5 +1,5 @@
 package com.example.testcarsales.di.base
-
+/*
 import androidx.lifecycle.ViewModel
 import com.example.testcarsales.ui.StatisticsFragment
 import com.example.testcarsales.ui.StatisticsViewModel
@@ -13,4 +13,4 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(StatisticsViewModel::class)
     abstract fun bindStatisticsViewModel(viewmodel: StatisticsViewModel): ViewModel
-}
+}*/

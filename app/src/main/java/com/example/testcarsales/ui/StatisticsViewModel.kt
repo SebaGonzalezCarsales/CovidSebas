@@ -1,5 +1,5 @@
 package com.example.testcarsales.ui
-
+/*
 import androidx.lifecycle.*
 import au.com.carsales.basemodule.context
 import au.com.carsales.basemodule.getAppContext
@@ -53,4 +53,4 @@ class StatisticsViewModel @Inject constructor(private val repository: MainReposi
             calendar
         }
     }
-}
+}*/

@@ -26,7 +26,10 @@ class LiveEvent<T> : MediatorLiveData<T>() {
 
     @MainThread
     override fun removeObserver(observer: Observer<in T>) {
-        if (observers.remove(observer)) {
+
+        val result = observers.find { wrapper -> wrapper.observer == observer }
+
+        if (result != null) {
             super.removeObserver(observer)
             return
         }

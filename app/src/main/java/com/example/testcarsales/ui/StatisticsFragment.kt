@@ -1,5 +1,5 @@
 package com.example.testcarsales.ui
-
+/*
 import android.app.DatePickerDialog
 import android.content.Context
 import androidx.lifecycle.ViewModelProvider
@@ -119,3 +119,4 @@ class StatisticsFragment : BaseModuleFragment() {
         ).show()
     }
 }
+*/
